@@ -11,49 +11,27 @@ namespace ClassLibrary
 {
     public class DataPersistance
     {
-
-        
-        public async void SerializeObject<T>(T serializableObject)
+        public async void SaveDataToXML(object obj, string fileName)
         {
+            var serializer = new XmlSerializer(obj.GetType());
+            
+            MemoryStream memoryStream = new MemoryStream();
 
-            FileStream fileStream = new FileStream(@"C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\XML\Test.xml", FileMode.Append);
-
-            if (serializableObject == null) { return; }
-
-            try
+            using (var stream = new StreamWriter(memoryStream))
             {
-                XmlDocument xmlDocument = new XmlDocument();
-                XmlSerializer serializer = new XmlSerializer(serializableObject.GetType());
-                using (MemoryStream stream = new MemoryStream())
-                {
-                    serializer.Serialize(stream, serializableObject);
-                    stream.Position = 0;
-                    xmlDocument.Load(stream);
-                    xmlDocument.Save(fileStream);
-                }
-            }
-            catch (Exception ex)
-            {
-                //Log exception here
+                serializer.Serialize(stream, obj);
             }
         }
 
-
-        public static void ObjectToXML<T>(T obj, string filePath)
+        public async void Save<T>(T file, String path)
         {
-            XmlSerializer s = new XmlSerializer(typeof(T));
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
             
-            var xml = "";
-
-            using (var sww = new StringWriter())
+            using (var fileStream = new FileStream(path, FileMode.Open, FileAccess.ReadWrite))
+            using (StreamWriter writer = new StreamWriter(fileStream, Encoding.UTF8))
             {
-                using (XmlWriter writer = XmlWriter.Create(sww))
-                {
-                    s.Serialize(writer, obj);
-                    xml = sww.ToString(); // Your XML
-                }
+                serializer.Serialize(writer, file);
             }
-
         }
     }
 }

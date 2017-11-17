@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-16T01:20:24.189</Modified>
+      <Modified>2017-11-17T01:20:41.706</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\UWP\bin\x86\Debug\UWP.exe">
       <PackagePath>entrypoint\UWP.exe</PackagePath>
-      <Modified>2017-11-16T01:20:22.823</Modified>
+      <Modified>2017-11-17T01:20:40.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mathias\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\ClassLibrary\bin\x86\Debug\ClassLibrary.dll">
       <PackagePath>ClassLibrary.dll</PackagePath>
-      <Modified>2017-11-16T01:20:16.405</Modified>
+      <Modified>2017-11-17T01:20:38.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -548,11 +548,11 @@
     <AppxPackagedFile Include="C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-16T01:16:33.626</Modified>
+      <Modified>2017-11-17T00:34:05.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\UWP\bin\x86\Debug\Core\UWP.exe">
       <PackagePath>UWP.exe</PackagePath>
-      <Modified>2017-11-16T01:20:24.169</Modified>
+      <Modified>2017-11-17T01:20:41.700</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
+ 
 namespace ClassLibrary
 {
+    
     public class Submission
     {
-        private string firstName, lastName, email, phone, birthday;
-        private string serialNumber;
+        private string firstName, lastName, email, phone, birthday, serialNumber;
+
+        public Submission()
+        {
+
+        }
 
         public Submission(string firstName, string lastName, string email, string phone, string birthday, string serialNumber)
         {

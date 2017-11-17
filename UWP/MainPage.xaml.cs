@@ -1,22 +1,11 @@
 ﻿using ClassLibrary;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.ApplicationModel.Core;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Core;
 using Windows.UI.Popups;
-using Windows.UI.ViewManagement;
+
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
+
 
 namespace UWP
 {
@@ -166,7 +155,9 @@ namespace UWP
 
         private void XMLButton_Click(object sender, RoutedEventArgs e)
         {
-            data.SerializeObject(submission);
+
+            //data.SaveDataToXML(submission, "submission");
+            data.Save(submission, @"C:\Users\Mathias\Desktop\data.xml");
             textBlock1.Text = "Succes!";
         }
     }
