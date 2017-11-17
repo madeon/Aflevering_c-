@@ -1,0 +1,2 @@
+C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\ClassLibrary\ClassLibrary.csproj;x86
+C:\Users\Mathias\Dropbox\SOFTWARE - SDU\5 Semester\C#\Aflevering\Aflevering_2_UWP\UWP\UWP\UWP.csproj;x86
